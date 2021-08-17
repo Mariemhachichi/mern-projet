@@ -10,8 +10,20 @@ require ("./config/db")
 
 
 app.use(express.json())
+
+
 const cors = require("cors")
-app.use(cors())
+const corsOptions = {
+  origin: process.env.CLIENT_URL,
+  credentials: true,
+  'allowedHeaders': ['sessionId', 'Content-Type'],
+  'exposedHeaders': ['sessionId'],
+  'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  'preflightContinue': false
+}
+app.use(cors(corsOptions));
+
+
 app.use(cookieParser());
  
 //routes
