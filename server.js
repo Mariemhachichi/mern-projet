@@ -1,5 +1,6 @@
 const express = require("express")
 const userRoutes = require('./routes/user.routes');
+const postRoutes = require('./routes/post.routes');
 require('dotenv').config({path: './config/.env'});
 const cookieParser = require('cookie-parser');
 
@@ -16,9 +17,8 @@ app.use(cookieParser());
 //routes
 // const joober = require('./routes/jooberRoute')
 // app.use('/joober',joober)
-
-
 app.use('/api/user',userRoutes)
+app.use('/api/post',postRoutes)
 
 // jwt
  app.get('*', checkUser);
