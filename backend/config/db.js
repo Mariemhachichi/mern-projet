@@ -10,6 +10,6 @@ const mongoose = require ('mongoose');
       })
       .then(() =>console.log('data_base connected'))
       .catch((err)=>console.log('failed to conncet to mongoDb',err));
-
+ 
 
 
