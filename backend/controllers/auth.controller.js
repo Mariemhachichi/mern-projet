@@ -11,9 +11,9 @@ const { signUpErrors, signInErrors } = require('../utils/errors.utils');
  };   
 
 module.exports.signUp = async (req, res) => {
-    const {pseudo, email, password} = req.body
+    const {pseudo, email, password, metier, tel} = req.body
    try {
-    const user = await UserModel.create({pseudo, email, password });
+    const user = await UserModel.create({pseudo, email, password , metier , tel});
      res.status(201).json({ user: user._id});
    }
       catch(err) {

@@ -1,0 +1,94 @@
+.part1{ 
+    height: 40rem !important;
+    color: black;
+    background-image: url("https://d1b747rczec55w.cloudfront.net/assets/home-bg-4dc4b66b752c785811e5c6b1d3df1f90b953d05e0ff367ff34f8823f34a0036a.svg");
+    background-size: cover !important;
+    background-position: bottom !important;
+}
+
+.part1 h1{
+  padding-top: 15% !important;
+  padding-left: 10%;
+  font-family: sans-serif !important;
+  font-size: 2.5rem;
+  line-height: 1.5em;
+  word-spacing: 3.5px;
+}
+
+.hr{
+  border-top: 1px solid rgb(204, 196, 196)!important;
+}
+
+.ul{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.logo{
+  height: 2.5em !important;
+  width: 60% !important;
+}
+/*services*/
+.service{
+  margin: 80px;
+}
+.image{
+  height: 10rem !important;
+}
+.service h1{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+.service p{
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+  color: gray;
+  word-spacing: 2px;
+}
+.service h3{
+  font-family: sans-serif;
+}
+/*card*/
+.container {
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background-color: white;
+  height: 25rem;
+  width: 50vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(190, 187, 187) !important;
+  color: black;
+}
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+.card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid rgb(190, 187, 187) ;
+  margin-top: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+}
+.p{
+  padding: 20px;
+  color: gray;
+  font-family: sans-serif;
+}
+/*fin card*/

@@ -5,6 +5,8 @@ import SignInForm from "./SignInForm";
 const SignUpForm = () => {
   const [formSubmit, setFormSubmit] = useState(false);
   const [pseudo, setPseudo] = useState("");
+  const [metier, setMetier] = useState("");
+  const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [controlPassword, setControlPassword] = useState("");
@@ -38,6 +40,8 @@ const SignUpForm = () => {
           pseudo,
           email,
           password,
+          metier,
+          tel,
         },
       })
         .then((res) => {
@@ -76,6 +80,24 @@ const SignUpForm = () => {
             value={pseudo}
           />
           <div className="pseudo error"></div>
+          <br />
+          <label htmlFor="metier">Secteur</label>
+          <br />
+          <input
+            type="text"
+            name="metier"
+            onChange={(e) => setMetier(e.target.value)}
+            value={metier}
+          />
+          <br />
+          <label htmlFor="tel">télèphone</label>
+          <br />
+          <input
+            type="text"
+            name="tel"
+            onChange={(e) => setTel(e.target.value)}
+            value={tel}
+          />
           <br />
           <label htmlFor="email">Email</label>
           <br />
