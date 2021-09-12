@@ -20,6 +20,7 @@ const Partie1 = () => {
             <li>{element3} Service encadré</li>
         </ul>
         <hr className="hr"></hr>
+        
         </div>
     );
 };

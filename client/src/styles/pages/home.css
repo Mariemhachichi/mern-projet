@@ -26,6 +26,13 @@
   font-size: 20px;
   font-family: sans-serif;
 }
+.ull{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
 
 .logo{
   height: 2.5em !important;
@@ -33,10 +40,16 @@
 }
 /*services*/
 .service{
-  margin: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.service p,h1{ 
+  margin: 0px 0px 0px 35px;
 }
 .image{
-  height: 10rem !important;
+  height: 150px !important;
+  border-radius: 4%;
+ 
 }
 .service h1{
   font-size: 1.5rem;
@@ -56,9 +69,12 @@
 /*card*/
 .container {
   align-items: center;
-  height: 100vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .card {
+  margin-top: 5px !important;
+  margin-left: 10px;
   background-color: white;
   height: 25rem;
   width: 50vh;
@@ -72,6 +88,8 @@
 .card__name {
   margin-top: 15px;
   font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 .card__image {
   height: 160px;
@@ -85,10 +103,47 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   font-size: 1.2em;
+  font-family: sans-serif;
+  padding: 20px;
 }
 .p{
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   color: gray;
   font-family: sans-serif;
 }
+.cart{
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 /*fin card*/
+.flex{
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+  display: flex;
+  justify-content: space-around;
+}
+.imgb{
+  border-radius: 20px;
+}
+.item{
+  margin-top: 10rem !important;
+}
+.item p{
+  color: gray;
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-left: 33px;
+}
+.item h1{
+  font-family: sans-serif;
+  font-size: 3rem;
+  word-spacing: 10px;
+  line-height: 4rem;
+}
+.flexi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
+}

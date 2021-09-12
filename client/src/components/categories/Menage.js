@@ -7,7 +7,7 @@ import { faUserCheck,faShieldAlt,faHandshake,faPhoneAlt} from '@fortawesome/free
 
 
 
-const Jardinage = () => {
+const Menage = () => {
     const usersData = useSelector(state => state.usersReducer);
     const dispatch = useDispatch();
     useEffect(()=>{
@@ -23,9 +23,9 @@ const Jardinage = () => {
         <div className="flex">
         <div className="item">
         <p>Trouvez le prestataire idéal, partout en Tunisie, en quelques minutes.</p>
-        <h1>Réservez vos services <br /> de jardinage ponctuels <br /> ou récurrents</h1>
+        <h1>Réservez vos services <br /> de ménage ponctuels <br /> ou récurrents</h1>
         </div>
-        <img src="https://d1b747rczec55w.cloudfront.net/assets/categories/21v-66bb6a3167924c025b4981611e6ef02db6cb6440419e52390d1de3942f5356b5.svg" alt="img" className="imgb"/>
+        <img src="https://d1b747rczec55w.cloudfront.net/assets/categories/23v-e4720078d40da7d5df6bb7d5a61f742186f5f67aaac4cf03548eeddf1b5687db.svg" alt="img" className="imgb"/>
         </div>
         <hr className="hr" />
         <ul className="ull">
@@ -37,7 +37,7 @@ const Jardinage = () => {
         <hr className="hr"></hr>
 
         <div className="cart">
-            {Object.keys(usersData).filter(el=>usersData[el].metier==="Jardinage").map((el,key) => (
+            {Object.keys(usersData).filter(el=>usersData[el].metier==="Menage").map((el,key) => (
               <div class="container" key={key}> 
               <div class="card">
               <img src={usersData[el].picture} alt ="img" class="card__image" />
@@ -59,6 +59,6 @@ const Jardinage = () => {
     );
 };
 
-export default Jardinage;
+export default Menage;
 
 
