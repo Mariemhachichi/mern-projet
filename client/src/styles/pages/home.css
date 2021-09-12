@@ -5,7 +5,21 @@
     background-size: cover !important;
     background-position: bottom !important;
 }
-
+.btn{
+  border-radius: 20px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  padding: 6px;
+  color: white;
+}
+.btn:hover{
+ background-color: #05299e;
+}
+.titre{
+  color: #007bff;
+  font-family: Garamond (serif);
+  font-weight: initial;
+}
 .part1 h1{
   padding-top: 15% !important;
   padding-left: 10%;
