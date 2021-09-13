@@ -4,6 +4,7 @@ import { getUsers } from "../../actions/users.actions";
 import  './../../styles/pages/home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCheck,faShieldAlt,faHandshake,faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
+import Footer from '../Footer';
 
 
 
@@ -56,6 +57,7 @@ const Animaux = () => {
                 </div>
             ))}
         </div>
+        <Footer />
     </div>
     );
 };

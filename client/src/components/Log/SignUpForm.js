@@ -89,6 +89,7 @@ const SignUpForm = () => {
             onChange={(e) => setMetier(e.target.value)}
             value={metier}
           />
+          <div></div>
           <br />
           <label htmlFor="tel">télèphone</label>
           <br />
@@ -98,6 +99,7 @@ const SignUpForm = () => {
             onChange={(e) => setTel(e.target.value)}
             value={tel}
           />
+          <div></div>
           <br />
           <label htmlFor="email">Email</label>
           <br />

@@ -4,6 +4,7 @@ import { getUsers } from "../../actions/users.actions";
 import  './../../styles/pages/home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCheck,faShieldAlt,faHandshake,faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
+import Footer from '../Footer';
 
 
 
@@ -53,8 +54,10 @@ const Aide= () => {
                <p className="p"> {usersData[el].bio}</p>
                 </div>
                 </div>
-            ))}
+               
+            ))}   
         </div>
+        <Footer />
     </div>
     );
 };
