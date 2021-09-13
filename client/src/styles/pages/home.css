@@ -207,3 +207,78 @@ footer h3{
   font-size: 1.5em;
   margin-top: -10px;
 }
+/*partie2*/
+.imgp{
+  height: 7em;
+  margin-left: 1em;
+}
+.part2 h1{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-bottom: 3em;
+}
+.part2 h2{
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.part2 p{
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+  color: gray;
+  word-spacing: 2px;
+  text-align: center;
+}
+.part3{
+  background-image: url("https://previews.123rf.com/images/ykvision/ykvision1812/ykvision181200003/116076776-empty-white-interior-blank-wall-with-lounge-armchair-plant-tree-3d-render-illustration-mockup-.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin: 0 10em 1em 10em;
+  border: 1px rgb(206, 198, 198) solid;
+}
+.part3 h1{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-top: 5em;
+}
+.part3 p{
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: rgb(102, 100, 100);
+  word-spacing: 2px;
+  text-align: start;
+  margin-top: -2.5em;
+  margin-left: 1.8em;
+}
+.uli{
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  padding: 5px;
+  text-align: left;
+}
+.p3{
+  margin: 4em !important;
+}
+.uli .p1{
+  color: rgb(102, 100, 100);
+  font-family: sans-serif;
+  color: rgb(102, 100, 100);
+  word-spacing: 2px;
+  text-align: start;
+}
+.uli1{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.uli1 li{
+  margin-left: -3em;
+}
