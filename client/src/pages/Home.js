@@ -5,6 +5,7 @@ import Partie2 from '../components/Home/Partie2';
 import Service from '../components/Service';
 
 
+
 const Home = () => {
     return (
         <div>                           
@@ -12,6 +13,7 @@ const Home = () => {
             <Service />
             <Partie2 />
             <Footer />
+           
         </div>
     );
 };

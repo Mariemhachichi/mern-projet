@@ -232,7 +232,7 @@ footer h3{
   text-align: center;
 }
 .part3{
-  background-image: url("https://previews.123rf.com/images/ykvision/ykvision1812/ykvision181200003/116076776-empty-white-interior-blank-wall-with-lounge-armchair-plant-tree-3d-render-illustration-mockup-.jpg") !important;
+  background-image: url("https://image.freepik.com/photos-gratuite/canape-rose-dans-salon-blanc-espace-copie_43614-798.jpg") !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,4 +281,7 @@ footer h3{
 }
 .uli1 li{
   margin-left: -3em;
+}
+.carte2{
+  margin-top: 2em;
 }

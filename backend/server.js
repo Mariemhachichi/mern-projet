@@ -1,5 +1,6 @@
 const express = require("express")
 const userRoutes = require('./routes/user.routes');
+const adminRoutes = require ('./admin/AdminRoute')
 const postRoutes = require('./routes/post.routes');
 require('dotenv').config({path: './config/.env'});
 const cookieParser = require('cookie-parser');
@@ -7,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const app = express()
 const {checkUser, requireAuth} = require('./middleware/auth.middleware');
 require ("./config/db")
+
 
 
 app.use(express.json())
@@ -31,6 +33,8 @@ app.use(cookieParser());
 // app.use('/joober',joober)
 app.use('/api/user',userRoutes)
 app.use('/api/post',postRoutes)
+app.use('/api/admin',adminRoutes)
+
 
 // jwt
  app.get('*', checkUser);

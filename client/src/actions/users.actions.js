@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import { deleteUsers } from "../request"; 
 export const GET_USERS = "GET_USERS";
 
 export const getUsers = () => {
@@ -12,3 +12,18 @@ export const getUsers = () => {
         .catch((err) => console.log(err));
     };
   };
+
+
+export const deleteUsersA = (id)=> async (dispatch) => {
+  try {
+    await deleteUsers  (id);
+    dispatch({
+      type:'REACT_APP_DELETE_Users',
+      payload:id
+  })
+    console.log("delete")
+    dispatch(getUsers);
+  } catch (error) {
+    console.log(error);
+  }
+};
