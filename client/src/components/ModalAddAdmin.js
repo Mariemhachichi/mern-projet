@@ -1,11 +1,8 @@
-import React,{useState} from 'react';
+import React, { useState } from "react";
 import axios from "axios";
-import "../styles/dshb.scss"
-
+import "../styles/dshb.scss";
 
 const ModalAddAdmin = () => {
- 
-
   const [formSubmit, setFormSubmit] = useState(false);
   const [pseudo, setPseudo] = useState("");
   const [metier, setMetier] = useState("");
@@ -61,14 +58,23 @@ const ModalAddAdmin = () => {
     }
   };
 
-    return (
-        <div>
-          <br/><br/><br/>
-             <>
-        <form action="" onSubmit={handleRegister} id="sign-up-form" className="back">
+  return (
+    <div>
+      <br />
+      <br />
+      <br />
+      <>
+        <form
+          action=""
+          onSubmit={handleRegister}
+          id="sign-up-form"
+          className="back"
+        >
           <h1>Ajouter Joober</h1>
-          <br/><br/><br/>
-          <label htmlFor="pseudo" >Pseudo</label>
+          <br />
+          <br />
+          <br />
+          <label htmlFor="pseudo">Pseudo</label>
           <br />
           <input
             type="text"
@@ -76,11 +82,12 @@ const ModalAddAdmin = () => {
             id="pseudo"
             onChange={(e) => setPseudo(e.target.value)}
             value={pseudo}
-          /><br/>
+          />
+          <br />
           <div className="pseudo error"></div>
-          <br/>
+          <br />
           <label htmlFor="metier">Secteur</label>
-          <br/>
+          <br />
           <input
             type="text"
             name="metier"
@@ -88,11 +95,10 @@ const ModalAddAdmin = () => {
             value={metier}
           />
           <div></div>
-          <br/>
-         
-          
-        <label htmlFor="tel">télèphone</label>
-        <br/>
+          <br />
+
+          <label htmlFor="tel">télèphone</label>
+          <br />
           <input
             type="text"
             name="tel"
@@ -100,9 +106,9 @@ const ModalAddAdmin = () => {
             value={tel}
           />
           <div></div>
-          <br/>
+          <br />
           <label htmlFor="email">Email</label>
-          <br/>
+          <br />
           <input
             type="text"
             name="email"
@@ -111,10 +117,10 @@ const ModalAddAdmin = () => {
             value={email}
           />
           <div className="email error"></div>
-          <br/>
-         
+          <br />
+
           <label htmlFor="password">Mot de passe</label>
-          <br/>
+          <br />
           <input
             type="password"
             name="password"
@@ -123,8 +129,8 @@ const ModalAddAdmin = () => {
             value={password}
           />
           <div className="password error"></div>
-          <br/>
-          <label htmlFor="password-conf">Confirmer mot de passe</label><br/>
+          <br />
+          <label htmlFor="password-conf">Confirmer mot de passe</label>
           <input
             type="password"
             name="password"
@@ -133,24 +139,27 @@ const ModalAddAdmin = () => {
             value={controlPassword}
           />
           <div className="password-confirm error"></div>
-          <br/>
-         
+          <br />
+
           <input type="checkbox" id="terms" />
-          <label htmlFor="terms" className="cnd">
+          <label htmlFor="terms">
             J'accepte les{" "}
-            <a href="/" target="_blank" rel="noopener noreferrer" className="cond">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cond"
+            >
               conditions générales
             </a>
           </label>
           <div className="terms error"></div>
-         
+
           <input type="submit" value="Valider inscription" />
         </form>
-     
-      
-    </>
-        </div>
-    );
+      </>
+    </div>
+  );
 };
 
 export default ModalAddAdmin;

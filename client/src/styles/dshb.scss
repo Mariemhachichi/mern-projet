@@ -206,13 +206,13 @@ ul.more-content li {
   margin-left: -180px;
 }
 
-#sign-up-form{
-  background-color: rgb(189, 189, 221);
+.frm{
+  background-color: rgb(189, 189, 221) !important;
   margin: 200px;
   margin-left: 400px !important;
   padding: 20px;
   width: 50%;
 }
-#sign-up-form input{
-  height: 50px;
+.frm input{
+  height: 50px !important;
 }

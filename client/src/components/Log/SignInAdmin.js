@@ -1,10 +1,9 @@
-import React,{useState} from 'react'
-import axios from 'axios'
-import {Link} from 'react-router-dom'
- //import { SignInA } from "../redux/action/actionUser";
+import React, { useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+//import { SignInA } from "../redux/action/actionUser";
 
-
-function SignInAdmin(){
+function SignInAdmin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,13 +12,12 @@ function SignInAdmin(){
     const emailError = document.querySelector(".email.error");
     const passwordError = document.querySelector(".password.error");
 
-
-axios.defaults.withCredentials = true
+    axios.defaults.withCredentials = true;
     axios({
       method: "post",
       withCredentials: true,
       url: `${process.env.REACT_APP_API_URL}api/admin/loginA`,
-     //mode: "no-cors",
+      //mode: "no-cors",
       data: {
         email,
         password,
@@ -39,39 +37,42 @@ axios.defaults.withCredentials = true
       });
   };
 
-
-  return(
+  return (
     <div id="all-form-sign-in-admin">
-      
-       <form action=""  id="sign-up-form">
-       <h3 className="titre-form-admin user__title">Inscrivez-vous afin d'être dirigé vers votre dashboard</h3><br></br>
-    <label htmlFor="email">Email</label>
-    <br />
-    <input
-      type="text"
-      name="email"
-      id="email"
-      onChange={(e) => setEmail(e.target.value)}
-      value={email}
-    />
-    <div className="email error"></div>
-    <br />
-    <label htmlFor="password">Mot de passe</label>
-    <br />
-    <input
-      type="password"
-      name="password"
-      id="password"
-      onChange={(e) => setPassword(e.target.value)}
-      value={password}
-    />
-    <div className="password error"></div>
-    <br />
-   <button onClick={handleLogin} type="submit"> <Link to='/dashb'>  Se connecter </Link></button>    
-  </form>
-   </div>
-   )
+      <form action="" id="sign-up-form" className="frm">
+        <h3 className="titre-form-admin user__title">
+          Inscrivez-vous afin d'être dirigé vers votre dashboard
+        </h3>
+        <br></br>
+        <label htmlFor="email">Email</label>
+        <br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
+        <div className="email error"></div>
+        <br />
+        <label htmlFor="password">Mot de passe</label>
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+        />
+        <div className="password error"></div>
+        <br />
+        <button onClick={handleLogin} type="submit">
+          {" "}
+          <Link to="/dashb"> Se connecter </Link>
+        </button>
+      </form>
+    </div>
+  );
+}
 
- }
-
-export default SignInAdmin
+export default SignInAdmin;
